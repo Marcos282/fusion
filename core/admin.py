@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import Servico, Cargo, Funcionario
 
+
 @admin.register(Cargo)
 class CargoAdmin(admin.ModelAdmin):
     list_display = ('cargo', 'descricao', 'ativo', 'criados', 'modificado')
